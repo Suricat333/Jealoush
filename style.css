@@ -1,0 +1,11 @@
+section{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+#main{
+  background-image: url(![img](bgMAIN.png))
+}
