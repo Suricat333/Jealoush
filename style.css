@@ -25,3 +25,10 @@ section{
 #commments{
   background-image: url(![img](bgCOMMENTS.png))
 }
+
+.main-block, .about-block, .skills-block, .works-block, .comments-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
