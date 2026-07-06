@@ -9,3 +9,19 @@ section{
 #main{
   background-image: url(![img](bgMAIN.png))
 }
+
+#about{
+  background-image: url(![img](bgABOUT.png))
+}
+
+#skills{
+  background-image: url(![img](bgSKILLS.png))
+}
+
+#works{
+  background-image: url(![img](bgWORKS.png))
+}
+
+#commments{
+  background-image: url(![img](bgCOMMENTS.png))
+}

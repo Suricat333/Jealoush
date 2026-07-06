@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/img/img"
+		},
+		{
+			"path": "../../../Desktop/img/__MACOSX"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Jealoush"
+	}
+}
