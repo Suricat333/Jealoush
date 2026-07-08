@@ -32,3 +32,29 @@ section{
   align-items: center;
   min-height: 70vh;
 }
+
+.main-block{
+  flex-direction: column;
+  height: Vmax;
+}
+
+.main-title{
+  color-text: #2B2D35;
+  text-size: 80px;
+  padding-top: 67px;
+}
+
+.main-subtitle{
+  color-text: #2B2D35;
+  text-size: 20px;
+  text-font: Comfortaa;
+}
+
+.main-content {
+  width: 849px;
+  height: 223px;
+  background-image: url(![img](form1.png))
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+}
