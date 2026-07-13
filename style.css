@@ -1,3 +1,18 @@
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.comfortaa-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 section{
   background-position: center;
   background-repeat: no-repeat;
@@ -7,23 +22,23 @@ section{
 }
 
 #main{
-  background-image: url(![img](bgMAIN.png))
+  background-image: url(![img](bgMAIN.png));
 }
 
 #about{
-  background-image: url(![img](bgABOUT.png))
+  background-image: url(![img](bgABOUT.png));
 }
 
 #skills{
-  background-image: url(![img](bgSKILLS.png))
+  background-image: url(![img](bgSKILLS.png));
 }
 
 #works{
-  background-image: url(![img](bgWORKS.png))
+  background-image: url(![img](bgWORKS.png));
 }
 
 #commments{
-  background-image: url(![img](bgCOMMENTS.png))
+  background-image: url(![img](bgCOMMENTS.png));
 }
 
 .main-block, .about-block, .skills-block, .works-block, .comments-block{
@@ -35,50 +50,62 @@ section{
 
 .main-block{
   flex-direction: column;
-  height: Vmax;
+  height: 100vh;
+
 }
 
-.main-title{
-  color-text: #2B2D35;
-  text-size: 80px;
-  padding-top: 67px;
-}
-
-.main-subtitle{
-  color-text: #2B2D35;
-  text-size: 20px;
-  text-font: Comfortaa;
-}
-
-.main-content {
-  width: 849px;
-  height: 223px;
-  background-image: url(![img](form1.png))
+.main-content{
+  background-image: url(img/form1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  width: 849px;
+  height: 223px;
   padding-left: 30px;
 }
 
-.button {
+.main-title{
+  padding-top: 67px;
+  color-text: #2B2D35;
+  font-size: 80px;
+}
+
+.main-subtitle{
+  color: #2B2D35;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+}
+
+.button{
   width: 200px;
   height: 60px;
   border-radius: 100px;
-  border: 2px black;
-  background-color: #BBFF2C;
+  border: 2px solid #000
+  background: #BBFF2C;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 0 #000000;
   margin-top: 20px;
-  animation: pulse;
+   animation: pulse;
   transition-duration: 0.3s;
-}
-
-.button a{
-  font-size: 20px;
-  text-decoration: none;
 }
 
 .button:hover{
   background: #a0d826;
+}
+
+.button a {
+font-size: 20px;
+text-decoration: none;
+}
+
+.button:hover{
+  background: #a0d826;
+}
+
+.main{
+  background-image: url(![img](planet.png));
+  width: 405px;
+  height: 330px;
+  padding-right: 20px;
 }
