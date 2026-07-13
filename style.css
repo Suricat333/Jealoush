@@ -70,9 +70,15 @@ section{
   align-items: center;
   box-shadow: 5px 5px 0 #000000;
   margin-top: 20px;
+  animation: pulse;
+  transition-duration: 0.3s;
 }
 
 .button a{
   font-size: 20px;
   text-decoration: none;
+}
+
+.button:hover{
+  background: #a0d826;
 }
