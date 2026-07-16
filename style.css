@@ -22,7 +22,7 @@ section{
 }
 
 #main{
-  background-image: url(![img](bgMAIN.png));
+  background-image: url(img/bgMAIN.png);
 }
 
 #about{
@@ -108,4 +108,5 @@ text-decoration: none;
   width: 405px;
   height: 330px;
   padding-right: 20px;
+  transform: rotate(45deg);
 }
