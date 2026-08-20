@@ -13,8 +13,6 @@ let classLink = '.main-link';
 
 window.onscroll = function () {
     let h = document.documentElement.clientHeight;
-};
-
 if (window.scrollY >= h*4 ) {
     classLink = '.comments-link';
 }
@@ -64,3 +62,12 @@ window.onscroll = function() {
    activeBtn.classList.remove('active')
  }
 };
+  };
+
+  document.querySelector(".mobile-button").addEventListener("click", function(event)) 
+  {
+    document.querySelector()
+  }
+
+
+
