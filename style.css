@@ -86,7 +86,6 @@ section{
   align-items: center;
   box-shadow: 5px 5px 0 #000000;
   margin-top: 20px;
-   animation: pulse;
   transition-duration: 0.3s;
 }
 
@@ -120,14 +119,18 @@ text-decoration: none;
   position: absolute;
   bottom: 30px;
   left: 30px;
-  animation-name: strelochka;
+  
+}
+@keyframes planet-move {
+  from{transform: translateY(0px);}
+  to{transform: translateY(70px);}
+}
+
+moving-planet{
+  animation-name: planet-move;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-@keyframes strelochka{
-  from{transform: translateY(0px);}
-  to{transform: translateY(42px);}
 }
 
 .title{
@@ -135,19 +138,21 @@ text-decoration: none;
   text-align: center;
   color: #FFF;
   font-size: 80px;
-  text-shadow: 
-  5px 5px 0 #000000;
+  text-shadow: 5px 5px 0 #000000;
  }
 
 .about-content{
   width: 35%;
   height: 270px;
   background: #792AFF;
-  padding-left: 40px ;
+  padding-left: 40px;
   padding-top: 40px;
   position: relative;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+
 
 .about-title{
   color: #FFF;
@@ -175,18 +180,16 @@ text-decoration: none;
 .about-card p{
   color: #000;
   font-size: 17px;
-  align-self: start;
+  align-self: flex-start;
   padding-left: 20px;
   line-height: 25px;
   font-family: 'Comfortaa';
 }
 
 .about-card img{
-    padding-bottom: 20px;
-}
-
-.about-card img{
-  padding-bottom: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .moving-cloud{
@@ -280,10 +283,14 @@ text-decoration: none;
 
 .comment{
   background-image: url(img/comment.png);
-  width: 327px;
+  width: 329px;
   height: 161px;
   justify-content: center;
   align-items: center;
+}
+
+.comment {
+  text-align: right;
 }
 
 .comment p{
@@ -368,7 +375,13 @@ nav{
   background-color: #BBFF2C;
   transform: scale(1.2, 1.2);
 }
-
+.mobile-button{
+   display: none;
+   padding-top: 10px;
+   width: 40px;
+   position: absolute;
+   right: 20px;
+}
 @media (max-width: 1000px) {
   .nav-links {
     display: none;
@@ -400,12 +413,27 @@ nav{
     margin-top: 10px;
     padding: 0;
   }
+  .about-content{
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+ }
   .about-card{
-    order: -1;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
     background-size: contain;
-    padding-top: 10px;
-    width: 163px;
-    height: 148px;
+  }
+  .about-card img{
+    max-width: 120px;
+    height: auto;
+  }
+  .about-card p{
+    padding-left: 0;
+    text-align: center;
+    align-self: center;
   }
   .skills-card{
     margin: 10px;
@@ -423,7 +451,7 @@ nav{
   }
   .works-block img{
     margin: 10px 0;
-    width: 40%;
+    width: 85%;
   }
   .comments-block{
     flex-direction: column;
@@ -452,13 +480,7 @@ nav{
     }
 }
 
-.mobile-button{
-   display: none;
-   padding-top: 10px;
-   width: 40px;
-   position: absolute;
-   right: 20px;
-}
+
 
 .hide{
    display: none;
